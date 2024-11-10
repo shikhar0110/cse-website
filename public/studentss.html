@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students - IIIT Guwahati</title>
+    <link rel="stylesheet" href="staffcss.css" />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Header Styling */
+      .header {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+      }
+
+      .header nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      .header nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: background 0.3s;
+      }
+
+      .header nav ul li a:hover {
+        background-color: #388e3c;
+      }
+
+      /* Main Section Styling */
+      .students-section {
+        max-width: 800px;
+        margin: 80px auto 50px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .students-section:hover {
+        transform: scale(1.02);
+      }
+
+      .students-section h2 {
+        color: #4caf50;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      .program-list {
+        margin-bottom: 30px;
+      }
+
+      .program-list h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .student-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .student-list li {
+        margin-bottom: 8px;
+      }
+
+      .student-list li a {
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .student-list li a:hover {
+        color: #388e3c;
+        text-decoration: underline;
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .footer-section {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .footer-section div {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+      }
+
+      .footer-link h2 {
+        color: white;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+      }
+
+      .footer-link p,
+      .footer-contact li,
+      .footer-menu li {
+        color: #eee;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+
+      .footer-link input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .footer-link button {
+        width: 100%;
+        padding: 10px;
+        background-color: gold;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .social-icon {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .social-icon a {
+        color: white;
+        font-size: 1.2em;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #333;
+      }
+
+      /* Responsive Styling */
+      @media (max-width: 768px) {
+        .footer-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .header nav ul {
+          display: block;
+          text-align: center;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header">
+        <a href="#" class="logo">CSE Website</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <section class="students-section">
+        <h2>Our Students</h2>
+
+        <div class="program-list">
+          <h3>B.Tech Students</h3>
+          <ul class="student-list">
+            <li><a href="profile/btech_student1.html">Student Name 1</a></li>
+            <li><a href="profile/btech_student2.html">Student Name 2</a></li>
+            <li><a href="profile/btech_student3.html">Student Name 3</a></li>
+          </ul>
+        </div>
+
+        <div class="program-list">
+          <h3>M.Tech Students</h3>
+          <ul class="student-list">
+            <li>
+              <a href="https://shivamyad2904.github.io/shivam.github.io/"
+                >Shivam Yadav</a
+              >
+            </li>
+            <li>
+              <a href="https://collegecse-website.vercel.app/">Amish Kumar</a>
+            </li>
+            <li>
+              <a href="https://shikar-b19f.vercel.app/">Shikhar Shuhla</a>
+            </li>
+            <li>
+              <a href="https://amankumar24-qhux.vercel.app/">Aman Kumar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="program-list">
+          <h3>Ph.D. Students</h3>
+          <ul class="student-list">
+            <li><a href="profile/phd_student1.html">Student Name 1</a></li>
+            <li><a href="profile/phd_student2.html">Student Name 2</a></li>
+            <li><a href="profile/phd_student3.html">Student Name 3</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-link">
+          <h2>My Global Campus</h2>
+          <p>
+            Welcome to a world of excellence and opportunity at IIIT Guwahati.
+          </p>
+          <div class="social-icon">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-link">
+          <h2>Featured Links</h2>
+          <ul class="footer-menu">
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> Graduation</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> Admission</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> Courses</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> International</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link">
+          <h2>Contact Info</h2>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa fa-envelope-o"></i>
+              <span>E-MAIL: info@dezven.com</span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i> <span>Call: +91 971 702 3456</span>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span>IIIT Guwahati, Assam, India</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link">
+          <h2>Subscribe to Updates</h2>
+          <input type="text" placeholder="Enter email" />
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+      <p>&copy; 2023 IIIT Guwahati. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
