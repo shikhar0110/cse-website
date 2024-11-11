@@ -55,11 +55,7 @@ This system aims to:
 - **Authentication**: Bun Web Tokens.
 - **Deployment**: Localhost or compatible web hosting
 
-## Getting Started
-
-Follow these steps to set up and run the project locally.
-
-### Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and
